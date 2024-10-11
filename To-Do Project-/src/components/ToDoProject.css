@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #F5F5DC;
+}
+.container{
+    min-height: 100vh;
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.addtask{
+     position: absolute;
+     top: 15px;
+     right: 50px;
+     padding: 10px;
+     border: none;
+     background-color: #0000FF;
+     color: white;
+     font-size: 15px;
+     font-weight: 600;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.2s;
+}
+.addtask:hover{
+    background-color: #0000B8;
+}
+.addtask:active{
+    background-color: #6CB4EE;
+}
+.task{
+    width: 500px;
+    margin: 45px auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 12px gray;
+    border-radius: 10px;
+    position: relative;
+}
+.task .cancel-icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.task h2{
+    margin: 20px 0px;
+}
+.task input{
+    width: 80%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.task input:hover{
+    border: 1px solid blue;
+}
+.task input:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 10px blue;
+}
+.form-button{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form-button button{
+    margin: 0 20px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.add-btn{
+    background-color: green;
+}
+.add-btn:hover{
+    background-color: darkgreen;
+}
+.reset-btn{
+    background-color: #FF0800;
+}
+.reset-btn:hover{
+    background-color: #B31B1B;
+}
+.yourtasks h2 {
+    margin-left: 50px;
+    text-decoration: underline;
+}
+.yourtasks .tasklist{
+    width: 80%;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.action-btn{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.update-btn{
+    padding: 8px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.update-btn:hover{
+    background-color: darkgreen;
+}
+.delete-btn{
+    padding: 8px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.delete-btn:hover{
+    background-color: #B31B1B;
+}
+.no_task{
+    margin: 100px 225px;
+}
